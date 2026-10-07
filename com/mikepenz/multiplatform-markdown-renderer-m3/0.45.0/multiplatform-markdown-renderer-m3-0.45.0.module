@@ -1,0 +1,555 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.mikepenz",
+    "module": "multiplatform-markdown-renderer-m3",
+    "version": "0.45.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "com.mikepenz",
+          "module": "multiplatform-markdown-renderer",
+          "version": {
+            "requires": "0.45.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "markdown",
+          "version": {
+            "requires": "0.7.9"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-markdown-renderer-m3-metadata-0.45.0.jar",
+          "url": "multiplatform-markdown-renderer-m3-0.45.0.jar",
+          "size": 4997,
+          "sha512": "4cc594f1c28f0571fc5ca0ca9d933e40223716ac5703cf4f2137212ee55780a53dfa2891f1ef4e7c4199bcc8b028b77d4aca8ba01f2779f752bf2eb1f38fe711",
+          "sha256": "0478243bf0e844613b87cec6f3fe1459d74ab908f36aefca085b00b787186b68",
+          "sha1": "b469e8216244c37c391c986ee2df94ea10bbc88f",
+          "md5": "2fb07622b339eb6d0290e1ef3b0a126d"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "multiplatform-markdown-renderer-m3-kotlin-0.45.0-sources.jar",
+          "url": "multiplatform-markdown-renderer-m3-0.45.0-sources.jar",
+          "size": 4554,
+          "sha512": "87afa3fcfefc9363a1e620a35e53e6c539e5f40717f9c337993fe21b4285eb546e13b98a52c822b43bec834471d5b1d91c3032ae6594f944f38bdb8dd25a553d",
+          "sha256": "de32977332113d9f831510177e42807431e3fc5799dfc885f9712191353e2b4e",
+          "sha1": "615916192e678cc3df7e1909d1fd936af46c42f5",
+          "md5": "bc819cf93011ad537df83e2067bba628"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-android/0.45.0/multiplatform-markdown-renderer-m3-android-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-android",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-android/0.45.0/multiplatform-markdown-renderer-m3-android-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-android",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-android/0.45.0/multiplatform-markdown-renderer-m3-android-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-android",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iosarm64/0.45.0/multiplatform-markdown-renderer-m3-iosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iosarm64/0.45.0/multiplatform-markdown-renderer-m3-iosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iosarm64/0.45.0/multiplatform-markdown-renderer-m3-iosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iosarm64/0.45.0/multiplatform-markdown-renderer-m3-iosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iossimulatorarm64/0.45.0/multiplatform-markdown-renderer-m3-iossimulatorarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iossimulatorarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iossimulatorarm64/0.45.0/multiplatform-markdown-renderer-m3-iossimulatorarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iossimulatorarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iossimulatorarm64/0.45.0/multiplatform-markdown-renderer-m3-iossimulatorarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iossimulatorarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-iossimulatorarm64/0.45.0/multiplatform-markdown-renderer-m3-iossimulatorarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-iossimulatorarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-js/0.45.0/multiplatform-markdown-renderer-m3-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-js/0.45.0/multiplatform-markdown-renderer-m3-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-js/0.45.0/multiplatform-markdown-renderer-m3-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jsResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresourcesjs",
+        "org.gradle.usage": "kotlin-multiplatformresourcesjs",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-js/0.45.0/multiplatform-markdown-renderer-m3-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-jvm/0.45.0/multiplatform-markdown-renderer-m3-jvm-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-jvm",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-jvm/0.45.0/multiplatform-markdown-renderer-m3-jvm-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-jvm",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-jvm/0.45.0/multiplatform-markdown-renderer-m3-jvm-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-jvm",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-macosarm64/0.45.0/multiplatform-markdown-renderer-m3-macosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-macosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-macosarm64/0.45.0/multiplatform-markdown-renderer-m3-macosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-macosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "macosArm64ResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresources",
+        "org.gradle.usage": "kotlin-multiplatformresources",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-macosarm64/0.45.0/multiplatform-markdown-renderer-m3-macosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-macosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-macosarm64/0.45.0/multiplatform-markdown-renderer-m3-macosarm64-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-macosarm64",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-wasm-js/0.45.0/multiplatform-markdown-renderer-m3-wasm-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-wasm-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-wasm-js/0.45.0/multiplatform-markdown-renderer-m3-wasm-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-wasm-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-wasm-js/0.45.0/multiplatform-markdown-renderer-m3-wasm-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-wasm-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "wasmJsResourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.libraryelements": "kotlin-multiplatformresourcesjs",
+        "org.gradle.usage": "kotlin-multiplatformresourcesjs",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "https://repo1.maven.org/maven2/com/mikepenz/multiplatform-markdown-renderer-m3-wasm-js/0.45.0/multiplatform-markdown-renderer-m3-wasm-js-0.45.0.module",
+        "group": "com.mikepenz",
+        "module": "multiplatform-markdown-renderer-m3-wasm-js",
+        "version": "0.45.0"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.mikepenz",
+          "module": "multiplatform-markdown-renderer",
+          "version": {
+            "requires": "0.45.0"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "markdown",
+          "version": {
+            "requires": "0.7.9"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "multiplatform-markdown-renderer-m3-linuxX64Main-0.45.0.klib",
+          "url": "multiplatform-markdown-renderer-m3-linuxX64Main-0.45.0.klib"
+        }
+      ]
+    }
+  ]
+}
