@@ -3,6 +3,7 @@ rootProject.name = "multiplatform-markdown-renderer-root"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
+    resolutionStrategy.eachPlugin { if (requested.id.id.startsWith("com.android")) useVersion("9.4.1") }
     repositories {
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         google()

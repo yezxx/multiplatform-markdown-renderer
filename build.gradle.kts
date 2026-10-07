@@ -22,10 +22,20 @@ allprojects {
     version = ext.get("VERSION_NAME")!!
 
     repositories {
+        maven { setUrl("https://yezxx.github.io/skiko") }
+        maven { setUrl("https://maven.bitsycore.com/releases") }
         mavenLocal()
         mavenCentral()
         google()
         maven { setUrl("https://maven.pkg.jetbrains.space/public/p/compose/dev") }
         maven { setUrl("https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental") }
+    }
+
+    configurations.matching { it.name.startsWith("linuxX64") }.configureEach {
+        resolutionStrategy.eachDependency {
+            if (requested.group.startsWith("org.jetbrains.compose") && !requested.group.endsWith(".runtime")) {
+                useTarget("com.bitsycore.${requested.group.substringAfter("org.jetbrains.")}:${requested.name}:1.12.1-1")
+            }
+        }
     }
 }

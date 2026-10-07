@@ -5,6 +5,7 @@ plugins {
 }
 
 kotlin {
+    linuxX64()
     android {
         namespace = "com.mikepenz.markdown"
     }
