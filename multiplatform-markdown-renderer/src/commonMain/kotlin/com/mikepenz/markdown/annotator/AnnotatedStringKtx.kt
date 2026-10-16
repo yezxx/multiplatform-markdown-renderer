@@ -306,7 +306,7 @@ fun AnnotatedString.Builder.buildMarkdownAnnotatedString(
                     MarkdownElementTypes.CODE_SPAN -> {
                         pushStyle(annotatorSettings.codeSpanStyle)
                         append(' ')
-                        buildMarkdownAnnotatedString(content, child.children.innerList(), annotatorSettings)
+                        append(codeSpanText(content, child))
                         append(' ')
                         pop()
                     }
@@ -375,5 +375,20 @@ fun AnnotatedString.Builder.buildMarkdownAnnotatedString(
         } else {
             skipIfNext = null
         }
+    }
+}
+
+/**
+ * The literal text of a code span: strip the backtick runs and, per CommonMark, drop one
+ * leading+trailing space when both are present. Walking the span's children instead would
+ * silently drop any HTML-looking `<tag>` the parser puts inside the span - e.g. `` `<br>` ``
+ * rendered as an empty span and `` `a<br>b` `` as "ab".
+ */
+private fun codeSpanText(content: String, node: ASTNode): String {
+    val raw = node.getTextInNode(content).toString().trim('`')
+    return if (raw.length >= 2 && raw.startsWith(' ') && raw.endsWith(' ') && raw.any { it != ' ' }) {
+        raw.substring(1, raw.length - 1)
+    } else {
+        raw
     }
 }
