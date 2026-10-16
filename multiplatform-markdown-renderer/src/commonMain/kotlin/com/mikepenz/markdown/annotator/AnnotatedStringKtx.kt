@@ -383,9 +383,19 @@ fun AnnotatedString.Builder.buildMarkdownAnnotatedString(
  * leading+trailing space when both are present. Walking the span's children instead would
  * silently drop any HTML-looking `<tag>` the parser puts inside the span - e.g. `` `<br>` ``
  * rendered as an empty span and `` `a<br>b` `` as "ab".
+ *
+ * Per CommonMark, the line endings inside the span are also converted to spaces before the
+ * space stripping (`a⏎b` is "a b", not "a\nb"); the parser keeps them verbatim otherwise.
  */
 private fun codeSpanText(content: String, node: ASTNode): String {
-    val raw = node.getTextInNode(content).toString().trim('`')
+    val raw =
+        node
+            .getTextInNode(content)
+            .toString()
+            .trim('`')
+            .replace("\r\n", " ")
+            .replace('\n', ' ')
+            .replace('\r', ' ')
     return if (raw.length >= 2 && raw.startsWith(' ') && raw.endsWith(' ') && raw.any { it != ' ' }) {
         raw.substring(1, raw.length - 1)
     } else {
